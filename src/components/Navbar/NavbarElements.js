@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
+import styled from "styled-components";
+import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   background-color: #11161e;
@@ -32,14 +32,14 @@ export const NavLogoWrapper = styled.div`
   display: flex;
 `;
 export const NavLogo = styled.p`
-  color: ${({ color }) => (color ? color : '#fff')};
+  color: #fff;
   justify-self: flex-start;
   cursor: pointer;
   font-size: 2rem;
   display: flex;
   align-items: center;
   /* margin-left: 24px; */
-  font-family: 'Logo';
+  font-family: "Logo";
   text-decoration: none;
 `;
 

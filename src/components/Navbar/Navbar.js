@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import React from "react";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,
@@ -11,7 +11,7 @@ import {
   NavMenu,
   NavBtn,
   NavBtnLink,
-} from './NavbarElements';
+} from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -19,8 +19,10 @@ const Navbar = ({ toggle }) => {
       <Nav>
         <NavbarContainer>
           <NavLogoWrapper>
-            <NavLogo color="#fff">Anime</NavLogo>
-            <NavLogo color="#ff5722">Zone</NavLogo>
+            <NavLogo>
+              Anime
+              <span style={{ color: "#ff5722", fontFamily: "Logo" }}>Zone</span>
+            </NavLogo>
           </NavLogoWrapper>
           <DrawerIcon onClick={toggle}>
             <FaBars />
