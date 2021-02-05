@@ -1,82 +1,85 @@
 import styled from "styled-components";
-
+import { Theme } from "../../theme";
+import { FaDownload } from "react-icons/fa";
+//
 export const HeroContainer = styled.div`
+  width: 90%;
+  height: 100vh;
+  padding: 0;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  /* background-color: red; */
-  padding: 0 50px;
-  height: 70vh;
-  position: relative;
-  z-index: 1;
+  justify-content: center;
+
   @media screen and (max-width: 768px) {
-    height: 100vh;
     flex-direction: column;
   }
 `;
 
 export const RightColumn = styled.div`
-  width: 50%;
+  width: 100%;
   height: 100%;
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 30px;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    height: 30vh;
-  }
+  /* background-color: green; */
 `;
 
-export const HeroH1 = styled.div`
-  font-size: 2.2rem;
-  font-weight: bold;
-  text-align: start;
-  padding-bottom: 20px;
-  color: #fff;
+export const HeroH3 = styled.h3`
+  color: white;
+  font-size: 3.8vh;
+
   @media screen and (max-width: 768px) {
-    font-size: 1.8rem;
-  }
-  @media screen and (max-width: 480px) {
-    font-size: 1.5rem;
+    text-align: center;
   }
 `;
 
 export const HeroP = styled.p`
-  font-size: 1.2rem;
-  color: #fff;
-  text-align: start;
+  color: white;
+  font-size: 2.5vh;
   padding-bottom: 10px;
+
   @media screen and (max-width: 768px) {
-    font-size: 1.1rem;
+    text-align: center;
   }
-  @media screen and (max-width: 480px) {
-    font-size: 0.8rem;
-  }
+`;
+
+export const DownloadContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const DownloadButton = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  background-color: ${Theme.accentColor};
+  border-radius: 30px;
+`;
+export const DownloadIcon = styled(FaDownload)`
+  font-size: 2vh;
+  color: white;
+  margin-right: 10px;
+`;
+
+export const DownloadText = styled.p`
+  color: white;
+  font-size: 2vh;
 `;
 
 export const LeftColumn = styled.div`
-  width: 50%;
-  height: 100%;
   display: flex;
+  align-content: center;
+  width: 100%;
+  position: relative;
+  height: 100%;
   /* background-color: red; */
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    height: 40vh;
-  }
 `;
 
-export const HeroImage = styled.img`
-  -o-object-fit: contain;
-  object-fit: contain;
-  height: 512px;
-  max-width: 100%;
-  margin: auto;
-  display: block;
-  z-index: 1;
+export const HeroImage = styled.div`
+  width: 100%;
+  height: 100%;
+  background-image: url("/screen1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 `;

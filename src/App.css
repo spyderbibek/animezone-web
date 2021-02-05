@@ -1,15 +1,17 @@
-@font-face {
-  font-family: 'Logo';
-  src: local('Logo'), url(./assets/fonts/Logo.otf) format('otf');
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 
-.App {
-  background-color: #11161e;
+@font-face {
+  font-family: "Logo";
+  src: local("Logo"), url(./assets/fonts/Logo.otf) format("otf");
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Monteserrat', sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
 }
